@@ -1,4 +1,4 @@
-import {Float, Integer} from "../../types/Numbers";
+import {Float, Integer} from "../../types";
 
 export class Device {
     readonly ip: String

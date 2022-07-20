@@ -1,9 +1,9 @@
-import {Integer} from "../../types/Numbers";
+import {Integer} from "../../types";
 import {Item} from "./Item";
 
 export class Container {
-    size: Integer
-    type: String
+    readonly size: Integer
+    readonly type: String
 
     addItem(item: Item): Boolean
 

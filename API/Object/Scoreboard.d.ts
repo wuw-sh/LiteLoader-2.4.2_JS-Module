@@ -1,9 +1,9 @@
-import {Integer} from "../../types/Numbers";
+import {Integer} from "../../types";
 import {Player} from "./Player";
 
 export class ScoreBoard {
-    name: String
-    displayName: String
+    readonly name: String
+    readonly displayName: String
 
     getScore(target: Player | String): Integer
 

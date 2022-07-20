@@ -1,5 +1,4 @@
-import {DirectionAngle, FloatPos, IntPos, NbtCompound} from "../../types";
-import {Float, Integer} from "../../types/Numbers";
+import {DirectionAngle, Float, FloatPos, Integer, IntPos, NbtCompound} from "../../types";
 import {Entity} from "./Entity";
 import {Block} from "./Block";
 import {Item} from "./Item";
@@ -7,20 +6,24 @@ import {Container} from "./Container";
 import {Device} from "./DeviceInfo";
 
 export class Player extends Entity {
-    pos: FloatPos;
-    blockPos: IntPos;
-    lastDeathPos: IntPos;
-    realName: String;
-    xuid: String;
-    uuid: String;
-    permLevel: Integer;
-    gameMode: Integer;
-    maxHealth: Integer;
-    health: Integer;
-    sneaking: Boolean;
-    speed: Float;
-    direction: DirectionAngle;
-    isLoading: Boolean;
+    readonly name: String;
+    readonly pos: FloatPos;
+    readonly blockPos: IntPos;
+    readonly lastDeathPos: IntPos;
+    readonly realName: String;
+    readonly xuid: String;
+    readonly uuid: String;
+    readonly permLevel: Integer;
+    readonly gameMode: Integer;
+    readonly maxHealth: Integer;
+    readonly health: Integer;
+    readonly inAir: Boolean;
+    readonly inWater: Boolean;
+    readonly sneaking: Boolean;
+    readonly speed: Float;
+    readonly direction: DirectionAngle;
+    readonly uniqueId: String;
+    readonly isLoading: Boolean;
 
     isOP(): Boolean
 
@@ -114,7 +117,7 @@ export class Player extends Entity {
      * @param sortOrder = 1
      */
 
-    setSidebar(title: String, data: {}, sortOrder : Number): Boolean
+    setSidebar(title: String, data: {}, sortOrder: Number): Boolean
 
     removeSidebar(): Boolean
 
@@ -134,7 +137,7 @@ export class Player extends Entity {
 
     getAllTags(): Array<String>
 
-    getAbilities(): {String, any}
+    getAbilities(): { String, any }
 
     getAttributes(): Array<Object>
 
@@ -142,4 +145,4 @@ export class Player extends Entity {
 
     setSprinting(sprinting: Boolean): Boolean
 
- }
+}

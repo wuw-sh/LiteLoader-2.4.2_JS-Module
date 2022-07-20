@@ -2,8 +2,8 @@ import {IntPos, NbtCompound} from "../../types";
 import {Block} from "./Block";
 
 export class BlockEntity {
-    pos: IntPos
-    type: IntPos
+    readonly pos: IntPos
+    readonly type: IntPos
 
     getNbt(): NbtCompound
 

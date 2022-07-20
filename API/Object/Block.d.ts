@@ -1,14 +1,13 @@
-import {Float, Integer} from "../../types/Numbers";
-import {FloatPos, IntPos, NbtCompound} from "../../types";
+import {Float, FloatPos, Integer, IntPos, NbtCompound} from "../../types";
 import {Container} from "./Container";
 import {BlockEntity} from "./BlockEntity";
 
 export class Block {
-    name: string;
-    type: string;
-    id: Integer;
-    pos: IntPos;
-    tileData: Integer;
+    readonly name: string;
+    readonly type: string;
+    readonly id: Integer;
+    readonly pos: IntPos;
+    readonly tileData: Integer;
 
     destroy(drop: Boolean): Boolean
 

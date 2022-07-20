@@ -1,6 +1,6 @@
-import {Block, Entity, Item, Player} from "../API/Object"
-import {Float, Integer} from "./Numbers"
-import {blockFace, FloatPos, IntPos} from "./Pos"
+import {Block, Entity, Item, Player} from "../../API"
+import {Float, Integer} from "../Numbers"
+import {blockFace, FloatPos, IntPos} from "../Pos"
 
 export class EventList {
 
