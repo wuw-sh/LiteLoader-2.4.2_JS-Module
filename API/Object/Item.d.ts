@@ -1,4 +1,4 @@
-import {Integer} from "../types/Numbers/Integer";
+import {Integer} from "../../types/Numbers";
 
 export class Item {
     name: string;

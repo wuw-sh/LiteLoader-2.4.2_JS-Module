@@ -1,25 +1,25 @@
-import {DirectionAngle} from "./DirectionAngle";
-import {FloatPos} from "./FloatPos";
-import {IntPos} from "./IntPos";
-import {Integer} from "../types/Numbers/Integer";
-import {Float} from "../types/Numbers/Float";
+import {DirectionAngle, FloatPos, IntPos, NbtCompound} from "../../types";
+import {Float, Integer} from "../../types/Numbers";
+import {Player} from "./Player";
+import {Item} from "./Item";
+import {Container} from "./Container";
+import {Block} from "./Block";
 
 export class Entity {
-    name: string;
-    type: string;
+    name: String;
+    type: String;
     id: Integer;
     pos: FloatPos;
     blockPos: IntPos;
     maxHealth: Integer;
     health: Integer;
-    inAir: boolean;
-    inWater: boolean;
+    inAir: Boolean;
+    inWater: Boolean;
     speed: Float;
     direction: DirectionAngle;
-    uniqueId: string;
+    uniqueId: String;
 
     teleport(pos: IntPos | FloatPos): Boolean
-
     teleport(x: Integer | Float, y: Integer | Float, z: Integer | Float, dimid: Integer): Boolean
 
     kill(): Boolean
@@ -30,7 +30,7 @@ export class Entity {
 
     isPlayer(): Boolean
 
-    toPlayer(): Player | Null
+    toPlayer(): Player | null
 
     isItemEntity(): Boolean
 
@@ -46,7 +46,7 @@ export class Entity {
 
     refreshItems(): Boolean
 
-    addTag(tag: String): Tag | Boolean
+    addTag(tag: String): Boolean
 
     removeTag(tag: String): Boolean
 
@@ -58,9 +58,9 @@ export class Entity {
 
     setNbt(nbt: NbtCompound): Boolean
 
-    explode(pos: IntPos | FloatPos, source: Entity | Null, range: Float, isDistroy: Boolean, isFire: Boolean): Boolean
+    explode(pos: IntPos | FloatPos, source: Entity | null, range: Float, isDistroy: Boolean, isFire: Boolean): Boolean
 
-    explode(x: Integer | Float, y: Integer | Float, z: Integer | Float, dimid: Integer, source: Entity | Null, range: Float, isDistroy: Boolean, isFire: Boolean): Boolean
+    explode(x: Integer | Float, y: Integer | Float, z: Integer | Float, dimid: Integer, source: Entity | null, range: Float, isDistroy: Boolean, isFire: Boolean): Boolean
 
     quickEvalMolangScript(str: String): Float
 }

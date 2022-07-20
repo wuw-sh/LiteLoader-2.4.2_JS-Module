@@ -1,10 +1,5 @@
-import {Player} from "../object/Player";
-import {Actor} from "../object/Actor";
-import {IntPos} from "../object/IntPos";
-import {FloatPos} from "../object/FloatPos";
-import {Item} from "../object/Item";
-import {Block} from "../object/Block";
-import {Entity} from "../object/Entity";
+import {Actor, Block, Entity, Item, Player} from "../Object";
+import {FloatPos, IntPos} from "../../types";
 
 export declare class Command {
     setAlias(alias: string): boolean

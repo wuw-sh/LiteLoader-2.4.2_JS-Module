@@ -1,5 +1,4 @@
-import {NbtCompound} from "../types/NBT-List/NbtCompound";
-import {IntPos} from "./IntPos";
+import {IntPos, NbtCompound} from "../../types";
 import {Block} from "./Block";
 
 export class BlockEntity {

@@ -1,18 +1,18 @@
-import {Integer} from "../types/Numbers/Integer";
+import {Float} from "../Numbers/Float";
 
-export class IntPos extends Integer {
+export class FloatPos extends Float {
     /**
-     * Return | x coordinate: Integer
+     * Return | x coordinate: Float
      */
     x: number
 
     /**
-     * Return | y coordinate: Integer
+     * Return | y coordinate: Float
      */
     y: number
 
     /**
-     * Return | z coordinate: Integer
+     * Return | z coordinate: Float
      */
     z: number
 

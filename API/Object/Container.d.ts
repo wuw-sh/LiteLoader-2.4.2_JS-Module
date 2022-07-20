@@ -1,4 +1,4 @@
-import {Integer} from "../types/Numbers/Integer";
+import {Integer} from "../../types/Numbers";
 import {Item} from "./Item";
 
 export class Container {
