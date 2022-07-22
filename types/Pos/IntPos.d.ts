@@ -1,28 +1,28 @@
-import {Integer} from "../Numbers/Integer";
+import {Integer} from "../Numbers";
 
 export class IntPos extends Integer {
     /**
      * Return | x coordinate: Integer
      */
-    x: number
+    x: Integer
 
     /**
      * Return | y coordinate: Integer
      */
-    y: number
+    y: Integer
 
     /**
      * Return | z coordinate: Integer
      */
-    z: number
+    z: Integer
 
     /**
-     * Return | Dimension Name: String
+     * Return | Dimension Name: string
      */
     dim: string
 
     /**
      * Return | Dimension ID: Integer
      */
-    dimid: number
+    dimid: Integer
 }

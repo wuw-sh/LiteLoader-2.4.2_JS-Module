@@ -7,7 +7,7 @@ export class BlockEntity {
 
     getNbt(): NbtCompound
 
-    setNbt(nbt: NbtCompound): Boolean
+    setNbt(nbt: NbtCompound): boolean
 
     getBlock(): Block
 

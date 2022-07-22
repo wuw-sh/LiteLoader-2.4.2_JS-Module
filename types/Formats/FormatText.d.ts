@@ -1,4 +1,7 @@
 export enum Format {
+    /**
+     * Color Code Table
+     */
     Black = "§0",
     DarkBlue = "§1",
     DarkGreen = "§2",
@@ -17,10 +20,13 @@ export enum Format {
     White = "§f",
     MinecoinGold = "§g",
 
+    /**
+     * Format Code Table
+     */
     Bold = "§l",
     Italics = "§o",
     Underline = "§n",
     StrikeThrough = "§m",
-    Random = "§",
-    Clear = "§g",
+    Random = "§k",
+    Clear = "§r",
 }

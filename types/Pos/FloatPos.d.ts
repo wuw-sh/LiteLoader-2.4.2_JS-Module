@@ -1,28 +1,28 @@
-import {Float} from "../Numbers/Float";
+import {Float, Integer} from "../Numbers";
 
 export class FloatPos extends Float {
     /**
      * Return | x coordinate: Float
      */
-    x: number
+    x: Float
 
     /**
      * Return | y coordinate: Float
      */
-    y: number
+    y: Float
 
     /**
      * Return | z coordinate: Float
      */
-    z: number
+    z: Float
 
     /**
-     * Return | Dimension Name: String
+     * Return | Dimension Name: string
      */
     dim: string
 
     /**
      * Return | Dimension ID: Integer
      */
-    dimid: number
+    dimid: Integer
 }

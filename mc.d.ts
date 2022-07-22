@@ -6,13 +6,13 @@ export class mc {
 
     static getServerProtocolVersion(): number
 
-    static setMotd(motd: String): boolean
+    static setMotd(motd: string): boolean
 
-    static setMaxPlayers(num: Number): boolean
+    static setMaxPlayers(num: number): boolean
 
-    static runcmd(cmd: String): boolean
+    static runcmd(cmd: string): boolean
 
-    static runcmdEx(cmd: String): { success: boolean, msg: string }
+    static runcmdEx(cmd: string): { success: boolean, msg: string }
 
     /**
      * @param cmd
@@ -21,7 +21,7 @@ export class mc {
      * @param flag = 0x80
      * @param alias = null
      */
-    static newCommand(cmd: String, description: String, permission: PermType, flag: Number, alias: String): Command
+    static newCommand(cmd: string, description: string, permission: PermType, flag: number, alias: string): Command
 
     /**
      * @param cmd
@@ -29,35 +29,35 @@ export class mc {
      * @param callback
      * @param level = 0
      */
-    static regPlayerCmd(cmd: String, description: String, callback: (player: Player, args: String[]) => void, level: Integer): boolean
+    static regPlayerCmd(cmd: string, description: string, callback: (player: Player, args: string[]) => void, level: Integer): boolean
 
-    static regConsoleCmd(cmd: String, description: String, callback: (args: String[]) => void): boolean
+    static regConsoleCmd(cmd: string, description: string, callback: (args: string[]) => void): boolean
 
-    static sendCmdOutput(output: String): boolean
+    static sendCmdOutput(output: string): boolean
 
     static listen<K extends keyof EventList>(event: K, callback: (...args: EventList[K]) => Awaitable<void>): boolean
 
-    static getPlayer(info: String): Player
+    static getPlayer(info: string): Player
 
     static getOnlinePlayers(): Player[]
 
-    static broadcast(msg: String, type: Integer): boolean
+    static broadcast(msg: string, type: Integer): boolean
 
-    static explode(x: IntPos | FloatPos, y: IntPos | FloatPos, z: IntPos | FloatPos, dimid: Integer, source: Entity, power: Float, range: Float, isDestroy: Boolean, isFire: Boolean): boolean
+    static explode(x: IntPos | FloatPos, y: IntPos | FloatPos, z: IntPos | FloatPos, dimid: Integer, source: Entity, power: Float, range: Float, isDestroy: boolean, isFire: boolean): boolean
 
-    static newItem(name: String, count: Integer): Item | null
+    static newItem(name: string, count: Integer): Item | null
 
     static newSimpleForm(): SimpleForm
 
     static newCustomForm(): CustomForm
 
-    static removeScoreObjective(name: String): boolean
+    static removeScoreobjective(name: string): boolean
 
-    static clearDisplayObjective(slot: DisplaySlot): boolean
+    static clearDisplayobjective(slot: DisplaySlot): boolean
 
     static getBlock(x: IntPos, y: IntPos, z: IntPos, dimid: Integer): Block | null
 
-    static setBlock(x: IntPos, y: IntPos, z: IntPos, dimid: Integer, block: Block | String | NbtCompound, tiledata: Integer): boolean
+    static setBlock(x: IntPos, y: IntPos, z: IntPos, dimid: Integer, block: Block | string | NbtCompound, tiledata: Integer): boolean
 
-    static spawnParticle(x: IntPos | FloatPos, y: IntPos | FloatPos, z: IntPos | FloatPos, dimid: Integer, type: String): boolean
+    static spawnParticle(x: IntPos | FloatPos, y: IntPos | FloatPos, z: IntPos | FloatPos, dimid: Integer, type: string): boolean
 }

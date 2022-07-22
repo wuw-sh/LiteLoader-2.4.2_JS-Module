@@ -1,14 +1,17 @@
+import {Float, Integer} from "../Numbers";
+
 export class DirectionAngle {
     /**
      * Return | Pitch angle (-90° ~ 90°): Float
      */
-    pitch: number;
+    pitch: Float;
     /**
      * Return | Yaw angle (rotation angle): Float
      */
-    yaw: number;
+    yaw: Float;
+
     /**
      * Return | The basic orientation indicated by the current bearing object: Integer
      */
-    toFacing: number
+    toFacing(): Integer
 }

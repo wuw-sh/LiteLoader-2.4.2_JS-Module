@@ -1,5 +1,5 @@
 import {Block, Entity, Item, Player} from "../../API"
-import {Float, Integer} from "../Numbers"
+import {Float, Integer} from "../numbers"
 import {blockFace, FloatPos, IntPos} from "../Pos"
 
 export class EventList {
@@ -19,9 +19,9 @@ export class EventList {
 
     onChangeDim: [player: Player, dimid: Integer]
 
-    onChangeSprinting: [player: Player, sprinting: Boolean]
+    onChangeSprinting: [player: Player, sprinting: boolean]
 
-    onChat: [player: Player, msg: String]
+    onChat: [player: Player, msg: string]
 
     onCloseContainer: [player: Player, block: Block]
 
@@ -33,11 +33,11 @@ export class EventList {
 
     onEat: [player: Player, item: Item]
 
-    onEffectAdded: [player: Player, effectName: String]
+    onEffectAdded: [player: Player, effectName: string]
 
-    onEffectRemoved: [player: Player, effectName: String]
+    onEffectRemoved: [player: Player, effectName: string]
 
-    onEffectUpdated: [player: Player, effectName: String]
+    onEffectUpdated: [player: Player, effectName: string]
 
     onExperienceAdded: [player: Player, exp: Integer]
 
@@ -55,7 +55,7 @@ export class EventList {
 
     onPlaceBlock: [player: Player, block: Block]
 
-    onPlayerCmd: [player: Player, cmd: String]
+    onPlayerCmd: [player: Player, cmd: string]
 
     onPlayerDie: [player: Player, source: Entity]
 
@@ -65,7 +65,7 @@ export class EventList {
 
     onSetArmor: [player: Player, slotNum: Integer, item: Item]
 
-    onSneak: [player: Player, isSneaking: Boolean]
+    onSneak: [player: Player, isSneaking: boolean]
 
     onStartDestroyBlock: [player: Player, block: Block]
 
@@ -86,9 +86,9 @@ export class EventList {
 
     onMobHurt: [mob: Entity, source: Entity, damage: Integer, cause: Integer]
 
-    onEntityExplode: [source: Entity, pos: FloatPos, radius: Float, maxResistance: Float, isDestroy: Boolean, isFire: Boolean]
+    onEntityExplode: [source: Entity, pos: FloatPos, radius: Float, maxResistance: Float, isDestroy: boolean, isFire: boolean]
 
-    onMobSpawn: [typeName: String, pos: FloatPos]
+    onMobSpawn: [typeName: string, pos: FloatPos]
 
     onProjectileHitEntity: [entity: Entity, source: Entity]
 
@@ -98,15 +98,15 @@ export class EventList {
 
     onStepOnPressurePlate: [entity: Entity, pressurePlate: Block]
 
-    onSpawnProjectile: [shooter: Entity, type: String]
+    onSpawnProjectile: [shooter: Entity, type: string]
 
     onProjectileCreated: [shooter: Entity, entity: Entity]
 
-    onNpcCmd: [npc: Entity, pl: Player, cmd: String]
+    onNpcCmd: [npc: Entity, pl: Player, cmd: string]
 
-    onChangeArmorStand: [as: Entity, pl: Player, slot: Number]
+    onChangeArmorStand: [as: Entity, pl: Player, slot: number]
 
-    onEntityTransformation: [uniqueId: String, entity: Entity]
+    onEntityTransformation: [uniqueId: string, entity: Entity]
 
     /**
      *
@@ -117,7 +117,7 @@ export class EventList {
 
     onBlockChanged: [beforeBlock: Block, afterBlock: Block]
 
-    onBlockExplode: [source: Block, pos: FloatPos, radius: Float, maxResistance: Float, isDestroy: Boolean, isFire: Boolean]
+    onBlockExplode: [source: Block, pos: FloatPos, radius: Float, maxResistance: Float, isDestroy: boolean, isFire: boolean]
 
     onRespawnAnchorExplode: [pos: IntPos, player: Player]
 
@@ -125,15 +125,15 @@ export class EventList {
 
     onFireSpread: [pos: IntPos]
 
-    onCmdBlockExecute: [cmd: String, pos: IntPos, isMinecart: Boolean]
+    onCmdBlockExecute: [cmd: string, pos: IntPos, isMinecart: boolean]
 
     onContainerChange: [player: Player, container: Block, slotNum: Integer, oldItem: Item, newItem: Item]
 
     onProjectileHitBlock: [block: Block, source: Entity]
 
-    onRedStoneUpdate: [block: Block, evel: Integer, isActive: Boolean]
+    onRedStoneUpdate: [block: Block, evel: Integer, isActive: boolean]
 
-    onHopperSearchItem: [pos: FloatPos, isMinecart: Boolean]
+    onHopperSearchItem: [pos: FloatPos, isMinecart: boolean]
 
     onHopperPushOut: [pos: FloatPos]
 
@@ -152,34 +152,34 @@ export class EventList {
      * Other Events
      *
      */
-    onScoreChanged: [player: Player, num: Integer, name: String, disName: String]
+    onScoreChanged: [player: Player, num: Integer, name: string, disName: string]
 
     onTick: [() => void]
 
     onServerStarted: [() => void]
 
-    onConsoleCmd: [cmd: String]
+    onConsoleCmd: [cmd: string]
 
-    onConsoleOutput: [cmd: String]
+    onConsoleOutput: [cmd: string]
 
     /**
      *
      * Economic System Events
      *
      */
-    beforeMoneyAdd: [xuid: String, money: Integer]
+    beforeMoneyAdd: [xuid: string, money: Integer]
 
-    onMoneyAdd: [xuid: String, money: Integer]
+    onMoneyAdd: [xuid: string, money: Integer]
 
-    beforeMoneyReduce: [xuid: String, money: Integer]
+    beforeMoneyReduce: [xuid: string, money: Integer]
 
-    onMoneyReduce: [xuid: String, money: Integer]
+    onMoneyReduce: [xuid: string, money: Integer]
 
-    beforeMoneyTrans: [from: String, to: String, money: Integer]
+    beforeMoneyTrans: [from: string, to: string, money: Integer]
 
-    onMoneyTrans: [from: String, to: String, money: Integer]
+    onMoneyTrans: [from: string, to: string, money: Integer]
 
-    beforeMoneySet: [xuid: String, money: Integer]
+    beforeMoneySet: [xuid: string, money: Integer]
 
-    onMoneySet: [xuid: String, money: Integer]
+    onMoneySet: [xuid: string, money: Integer]
 }

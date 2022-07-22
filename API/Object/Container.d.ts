@@ -3,23 +3,23 @@ import {Item} from "./Item";
 
 export class Container {
     readonly size: Integer
-    readonly type: String
+    readonly type: string
 
-    addItem(item: Item): Boolean
+    addItem(item: Item): boolean
 
-    addItemToFirstEmptySlot(item: Item): Boolean
+    addItemToFirstEmptySlot(item: Item): boolean
 
-    hasRoomFor(item: Item): Boolean
+    hasRoomFor(item: Item): boolean
 
-    removeItem(index: Integer, count: Integer): Boolean
+    removeItem(index: Integer, count: Integer): boolean
 
     getItem(index: Integer): Item
 
-    setItem(index: Integer, item: Item): Boolean
+    setItem(index: Integer, item: Item): boolean
 
     getAllItems(): Array<Item>
 
-    removeAllItems(): Boolean
+    removeAllItems(): boolean
 
-    isEmpty(): Boolean
+    isEmpty(): boolean
 }

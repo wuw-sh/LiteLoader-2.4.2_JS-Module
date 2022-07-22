@@ -5,33 +5,33 @@ import {Container} from "./Container";
 import {Block} from "./Block";
 
 export class Entity {
-    readonly name: String;
-    readonly type: String;
+    readonly name: string;
+    readonly type: string;
     readonly id: Integer;
     readonly pos: FloatPos;
     readonly blockPos: IntPos;
     readonly maxHealth: Integer;
     readonly health: Integer;
-    readonly inAir: Boolean;
-    readonly inWater: Boolean;
+    readonly inAir: boolean;
+    readonly inWater: boolean;
     readonly speed: Float;
     readonly direction: DirectionAngle;
-    readonly uniqueId: String;
+    readonly uniqueId: string;
 
-    teleport(pos: IntPos | FloatPos): Boolean
-    teleport(x: Integer | Float, y: Integer | Float, z: Integer | Float, dimid: Integer): Boolean
+    teleport(pos: IntPos | FloatPos): boolean
+    teleport(x: Integer | Float, y: Integer | Float, z: Integer | Float, dimid: Integer): boolean
 
-    kill(): Boolean
+    kill(): boolean
 
-    hurt(damage: Integer): Boolean
+    hurt(damage: Integer): boolean
 
-    setOnFire(time: Integer): Boolean
+    setOnFire(time: Integer): boolean
 
-    isPlayer(): Boolean
+    isPlayer(): boolean
 
     toPlayer(): Player | null
 
-    isItemEntity(): Boolean
+    isItemEntity(): boolean
 
     toItem(): Item
 
@@ -39,27 +39,27 @@ export class Entity {
 
     getArmor(): Container
 
-    hasContainer(): Boolean
+    hasContainer(): boolean
 
     getContainer(): Container
 
-    refreshItems(): Boolean
+    refreshItems(): boolean
 
-    addTag(tag: String): Boolean
+    addTag(tag: string): boolean
 
-    removeTag(tag: String): Boolean
+    removeTag(tag: string): boolean
 
-    hasTag(tag: String): Boolean
+    hasTag(tag: string): boolean
 
-    getAllTags(): Array<String>
+    getAllTags(): Array<string>
 
     getNbt(): NbtCompound
 
-    setNbt(nbt: NbtCompound): Boolean
+    setNbt(nbt: NbtCompound): boolean
 
-    explode(pos: IntPos | FloatPos, source: Entity | null, range: Float, isDistroy: Boolean, isFire: Boolean): Boolean
+    explode(pos: IntPos | FloatPos, source: Entity | null, range: Float, isDistroy: boolean, isFire: boolean): boolean
 
-    explode(x: Integer | Float, y: Integer | Float, z: Integer | Float, dimid: Integer, source: Entity | null, range: Float, isDistroy: Boolean, isFire: Boolean): Boolean
+    explode(x: Integer | Float, y: Integer | Float, z: Integer | Float, dimid: Integer, source: Entity | null, range: Float, isDistroy: boolean, isFire: boolean): boolean
 
-    quickEvalMolangScript(str: String): Float
+    quickEvalMolangScript(str: string): Float
 }

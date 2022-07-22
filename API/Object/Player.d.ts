@@ -4,54 +4,55 @@ import {Block} from "./Block";
 import {Item} from "./Item";
 import {Container} from "./Container";
 import {Device} from "./DeviceInfo";
+import {SimpleForm} from "../Form";
 
 export class Player extends Entity {
-    readonly name: String;
+    readonly name: string;
     readonly pos: FloatPos;
     readonly blockPos: IntPos;
     readonly lastDeathPos: IntPos;
-    readonly realName: String;
-    readonly xuid: String;
-    readonly uuid: String;
+    readonly realName: string;
+    readonly xuid: string;
+    readonly uuid: string;
     readonly permLevel: Integer;
     readonly gameMode: Integer;
     readonly maxHealth: Integer;
     readonly health: Integer;
-    readonly inAir: Boolean;
-    readonly inWater: Boolean;
-    readonly sneaking: Boolean;
+    readonly inAir: boolean;
+    readonly inWater: boolean;
+    readonly sneaking: boolean;
     readonly speed: Float;
     readonly direction: DirectionAngle;
-    readonly uniqueId: String;
-    readonly isLoading: Boolean;
+    readonly uniqueId: string;
+    readonly isLoading: boolean;
 
-    isOP(): Boolean
+    isOP(): boolean
 
-    kick(msg: String): Boolean
+    kick(msg: string): boolean
 
-    disconnect(msg: String): Boolean
+    disconnect(msg: string): boolean
 
-    tell(msg: String, type: Integer): Boolean
+    tell(msg: string, type: Integer): boolean
 
-    sendText(msg: String, type: Integer): Boolean
+    sendText(msg: string, type: Integer): boolean
 
-    sendToast(title: String, message: String): Boolean
+    sendToast(title: string, message: string): boolean
 
-    runcmd(cmd: String): Boolean
+    runcmd(cmd: string): boolean
 
-    talkAs(text: String): Boolean
-    talkAs(target: Player | String, text: String): Boolean
+    talkAs(text: string): boolean
+    talkAs(target: Player | string, text: string): boolean
 
-    teleport(pos: IntPos | FloatPos): Boolean
-    teleport(x: Integer | Float, y: Integer | Float, z: Integer | Float, dimid: Integer): Boolean
+    teleport(pos: IntPos | FloatPos): boolean
+    teleport(x: Integer | Float, y: Integer | Float, z: Integer | Float, dimid: Integer): boolean
 
-    kill(): Boolean
+    kill(): boolean
 
-    hurt(damage: Integer): Boolean
+    hurt(damage: Integer): boolean
 
-    setOnFire(time: Integer): Boolean
+    setOnFire(time: Integer): boolean
 
-    rename(nename: String): Boolean
+    rename(nename: string): boolean
 
     getBlockStandingOn(): Block
 
@@ -69,80 +70,84 @@ export class Player extends Entity {
 
     getRespawnPosition(): IntPos
 
-    setRespawnPosition(pos: IntPos): Boolean
-    setRespawnPosition(x: Integer, y: Integer, z: Integer, dimid: Integer): Boolean
+    setRespawnPosition(pos: IntPos): boolean
+    setRespawnPosition(x: Integer, y: Integer, z: Integer, dimid: Integer): boolean
 
-    giveItem(item: Item): Boolean
+    giveItem(item: Item): boolean
 
-    clearItem(type: String): Integer
+    clearItem(type: string): Integer
 
-    refreshItems(): Boolean
+    refreshItems(): boolean
 
-    refreshChunks(): Boolean
+    refreshChunks(): boolean
 
-    setPermLevel(level: Integer): Boolean
+    setPermLevel(level: Integer): boolean
 
-    setGameMode(mode: Integer): Boolean
+    setGameMode(mode: Integer): boolean
 
-    addLevel(count: Integer): Boolean
+    addLevel(count: Integer): boolean
 
-    reduceLevel(count: Integer): Boolean
+    reduceLevel(count: Integer): boolean
 
     getLevel(): Integer
 
-    setLevel(count: Integer): Boolean
+    setLevel(count: Integer): boolean
 
-    resetLevel(): Boolean
+    resetLevel(): boolean
 
-    getCurrentExperience(): Boolean
+    getCurrentExperience(): boolean
 
-    setCurrentExperience(count: Integer): Boolean
+    setCurrentExperience(count: Integer): boolean
 
     getTotalExperience(): Integer
-    getTotalExperience(count: Integer): Boolean
+    getTotalExperience(count: Integer): boolean
 
-    addExperience(count: Integer): Boolean
+    addExperience(count: Integer): boolean
 
-    reduceExperience(count: Integer): Boolean
+    reduceExperience(count: Integer): boolean
 
     getXpNeededForNextLevel(): Integer
 
-    transServer(server: String, port: Integer): Boolean
+    transServer(server: string, port: Integer): boolean
 
-    crash(): Boolean
+    crash(): boolean
 
     /**
      * @param title
      * @param data
      * @param sortOrder = 1
      */
+    setSidebar(title: string, data: {}, sortOrder: number): boolean
 
-    setSidebar(title: String, data: {}, sortOrder: Number): Boolean
+    removeSidebar(): boolean
 
-    removeSidebar(): Boolean
+    setBossBar(uid: number, title: string, percent: Integer, colour: Integer): boolean
 
-    setBossBar(uid: Number, title: String, percent: Integer, colour: Integer): Boolean
-
-    removeBossBar(uid: Number): Boolean
+    removeBossBar(uid: number): boolean
 
     getNbt(): NbtCompound
 
-    setNbt(nbt: NbtCompound): Boolean
+    setNbt(nbt: NbtCompound): boolean
 
-    addTag(tag: String): Boolean
+    addTag(tag: string): boolean
 
-    removeTag(tag: String): Boolean
+    removeTag(tag: string): boolean
 
-    hasTag(tag: String): Boolean
+    hasTag(tag: string): boolean
 
-    getAllTags(): Array<String>
+    getAllTags(): Array<string>
 
-    getAbilities(): { String, any }
+    getAbilities(): { string, any }
 
-    getAttributes(): Array<Object>
+    getAttributes(): Array<object>
 
-    isSprinting(): Boolean
+    isSprinting(): boolean
 
-    setSprinting(sprinting: Boolean): Boolean
+    setSprinting(sprinting: boolean): boolean
+
+    /**
+     * Send Form
+     */
+    sendForm(fm: SimpleForm, callback: (player: Player, id: Integer) => void): Integer | null
 
 }

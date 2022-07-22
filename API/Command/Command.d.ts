@@ -1,4 +1,4 @@
-import {Actor, Block, Entity, Item, Player} from "../Object";
+import {Actor, Block, Entity, Item, Player} from "../object";
 import {FloatPos, IntPos} from "../../types";
 
 export declare class Command {
@@ -17,43 +17,43 @@ export declare class Command {
     setup(): boolean
 }
 
-export declare class CommandOutput {
-    static success(msg: string): boolean
+export class CommandOutput {
+    success(msg: string): boolean
 
-    static error(msg: string): boolean
+    error(msg: string): boolean
 
-    static addMessage(msg: string): boolean
+    addMessage(msg: string): boolean
 }
 
-export declare class ParamType {
-    static Bool: boolean
-    static Int: number
-    static Float: number
-    static String: string
-    static Actor: Actor[]
-    static Player: Player[]
-    static BlockPos: IntPos
-    static Vec3: FloatPos
-    static RawText: string
-    static Message: string
-    static JsonValue: string
-    static Item: Item
-    static Block: Block
-    static Effect: string
-    static Enum: string
-    static SoftEnum: string
-    static ActorType: string
-    static Command: string
+export class ParamType {
+    Bool: boolean
+    Int: number
+    Float: number
+    string: string
+    Actor: Actor[]
+    Player: Player[]
+    BlockPos: IntPos
+    Vec3: FloatPos
+    RawText: string
+    Message: string
+    JsonValue: string
+    Item: Item
+    Block: Block
+    Effect: string
+    Enum: string
+    SoftEnum: string
+    ActorType: string
+    Command: string
 }
 
 declare class OriginType {
 }
 
-export declare class CommandOrigin {
-    static type: OriginType
-    static name: string
-    static pos: FloatPos
-    static blockPos: IntPos
-    static entity: Entity
-    static player: Player
+export class CommandOrigin {
+    type: OriginType
+    name: string
+    pos: FloatPos
+    blockPos: IntPos
+    entity: Entity
+    player: Player
 }

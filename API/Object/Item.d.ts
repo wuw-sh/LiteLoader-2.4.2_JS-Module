@@ -24,5 +24,5 @@ export class Item {
 
     setNbt(nbt: NbtCompound): boolean
 
-    setLore(names: Array<String>): boolean;
+    setLore(names: Array<string>): boolean;
 }

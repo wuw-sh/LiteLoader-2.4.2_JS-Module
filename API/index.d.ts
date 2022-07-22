@@ -1,3 +1,3 @@
 export * from './Command';
 export * from './Form';
-export * from './Object';
+export * from './object';

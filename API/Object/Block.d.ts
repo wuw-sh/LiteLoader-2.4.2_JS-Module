@@ -9,26 +9,26 @@ export class Block {
     readonly pos: IntPos;
     readonly tileData: Integer;
 
-    destroy(drop: Boolean): Boolean
+    destroy(drop: boolean): boolean
 
     getNbt(): NbtCompound
 
-    getBlockState(): Object
+    getBlockState(): object
 
-    hasContainer(): Boolean
+    hasContainer(): boolean
 
     getContainer(): Container
 
-    hasBlockEntity(): Boolean
+    hasBlockEntity(): boolean
 
     getBlockEntity(): BlockEntity
 
-    removeBlockEntity(): Boolean
+    removeBlockEntity(): boolean
 
-    setBlock(pos: IntPos, block: Block | String | NbtCompound, tiledata: Integer): Boolean
-    setBlock(x: Integer, y: Integer, z: Integer, dimid: Integer, block: Block | String | NbtCompound, tiledata: Integer): Boolean
+    setBlock(pos: IntPos, block: Block | string | NbtCompound, tiledata: Integer): boolean
+    setBlock(x: Integer, y: Integer, z: Integer, dimid: Integer, block: Block | string | NbtCompound, tiledata: Integer): boolean
 
-    spawnParticle(pos: IntPos | FloatPos, type: String): Boolean
+    spawnParticle(pos: IntPos | FloatPos, type: string): boolean
 
-    spawnParticle(x: Integer | Float, y: Integer | Float, z: Integer | Float, type: String): Boolean
+    spawnParticle(x: Integer | Float, y: Integer | Float, z: Integer | Float, type: string): boolean
 }
