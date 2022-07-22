@@ -1,3 +1,3 @@
 export * from './mc'
-export * from './API'
+export * from './Documentation'
 export * from './types'

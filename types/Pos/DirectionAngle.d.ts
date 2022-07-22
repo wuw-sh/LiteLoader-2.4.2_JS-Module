@@ -1,4 +1,4 @@
-import {Float, Integer} from "../Numbers";
+import {Float, Integer} from "../Type";
 
 export class DirectionAngle {
     /**

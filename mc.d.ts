@@ -1,5 +1,5 @@
-import {Block, Command, CustomForm, Entity, Item, Player, SimpleForm} from "./API";
-import {Awaitable, DisplaySlot, EventList, Float, FloatPos, Integer, IntPos, NbtCompound, PermType} from "./types";
+import {Block, Command, CustomForm, Entity, Item, NbtCompound, Player, SimpleForm} from "./Documentation";
+import {Awaitable, DisplaySlot, EventList, Float, FloatPos, Integer, IntPos, PermType} from "./types";
 
 export class mc {
     static getBDSVersion(): string
@@ -60,4 +60,6 @@ export class mc {
     static setBlock(x: IntPos, y: IntPos, z: IntPos, dimid: Integer, block: Block | string | NbtCompound, tiledata: Integer): boolean
 
     static spawnParticle(x: IntPos | FloatPos, y: IntPos | FloatPos, z: IntPos | FloatPos, dimid: Integer, type: string): boolean
+
+    static sendModalForm(title: String, content: String, confirmButton: String, cancelButton: String, callback: (player: Player, result: Boolean) => void): Integer
 }

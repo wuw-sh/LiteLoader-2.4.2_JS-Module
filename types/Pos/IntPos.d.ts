@@ -1,4 +1,4 @@
-import {Integer} from "../Numbers";
+import {Integer} from "../Type";
 
 export class IntPos extends Integer {
     /**
