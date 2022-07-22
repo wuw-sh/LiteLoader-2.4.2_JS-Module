@@ -1,6 +1,6 @@
 import {IntPos} from "../../types";
 import {Block} from "./Block";
-import {NbtCompound} from "../NBTs";
+import {NbtCompound} from "../NBT";
 
 export class BlockEntity {
     readonly pos: IntPos

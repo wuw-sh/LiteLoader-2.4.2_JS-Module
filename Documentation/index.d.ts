@@ -1,4 +1,4 @@
 export * from './API'
 export * from './Object';
-export * from './NBTs';
+export * from './NBT';
 export * from './Packet'

@@ -1,5 +1,5 @@
 import {Float, FloatPos, Integer} from "../../types";
-import {NbtCompound} from "../NBTs";
+import {NbtCompound} from "../NBT";
 
 export class Packet {
     getName(): string

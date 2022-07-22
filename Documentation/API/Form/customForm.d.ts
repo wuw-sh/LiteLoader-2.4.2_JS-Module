@@ -1,9 +1,9 @@
 import {Integer} from "../../../types";
 
 export class CustomForm {
-    setTitle(title: String): CustomForm
+    static setTitle(title: String): CustomForm
 
-    addLabel(text: string): CustomForm
+    static addLabel(text: string): CustomForm
 
     addInput(title: string, placeholder?: string, Default?: string)
 

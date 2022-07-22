@@ -1,6 +1,6 @@
 import {FloatPos, Integer, IntPos} from "../../types";
 import {Entity} from "./Entity";
-import {NbtCompound} from "../NBTs";
+import {NbtCompound} from "../NBT";
 
 export class Item {
     readonly name: string;

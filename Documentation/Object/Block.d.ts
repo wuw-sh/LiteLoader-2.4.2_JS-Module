@@ -1,6 +1,7 @@
 import {Float, FloatPos, Integer, IntPos} from "../../types";
 import {Container} from "./Container";
-import {BlockEntity} from "./BlockEntity";
+import {BlockEntity} from "./BlockEntity"
+import {NbtCompound} from "../NBT";
 
 export class Block {
     readonly name: string;

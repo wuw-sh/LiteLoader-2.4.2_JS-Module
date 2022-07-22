@@ -1,4 +1,4 @@
-import {NBT} from "../NBTs";
+import {NBT} from "../NBT";
 import {Integer} from "../../types";
 
 export class NBTObjectGenericInterface {

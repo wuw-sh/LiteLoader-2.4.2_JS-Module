@@ -60,6 +60,4 @@ export class mc {
     static setBlock(x: IntPos, y: IntPos, z: IntPos, dimid: Integer, block: Block | string | NbtCompound, tiledata: Integer): boolean
 
     static spawnParticle(x: IntPos | FloatPos, y: IntPos | FloatPos, z: IntPos | FloatPos, dimid: Integer, type: string): boolean
-
-    static sendModalForm(title: String, content: String, confirmButton: String, cancelButton: String, callback: (player: Player, result: Boolean) => void): Integer
 }

@@ -3,7 +3,7 @@ import {Player} from "./Player";
 import {Item} from "./Item";
 import {Container} from "./Container";
 import {Block} from "./Block";
-import {NbtCompound} from "../NBTs";
+import {NbtCompound} from "../NBT";
 
 export class Entity {
     readonly name: string;

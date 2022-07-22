@@ -1,10 +1,12 @@
-import {Integer} from "../../types";
+import {Integer} from "./types";
 
 export class ll {
     static version(): Object
 
     static versionString(): String
 
+    static requireVersion(major: Integer): Boolean
+    static requireVersion(major: Integer, minor: Integer): Boolean
     static requireVersion(major: Integer, minor: Integer, revision: Integer): Boolean
 
     static listPlugins(): Array<String>
@@ -15,8 +17,9 @@ export class ll {
     static import(name: String): Function
     static import(namespace: String, name: String): Function
 
+    static require(path: String): Boolean
     static require(path: String, remotePath: String): Boolean
 
     static eval(str: String): any
-    
+
 }

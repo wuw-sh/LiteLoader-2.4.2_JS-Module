@@ -1,7 +1,7 @@
 import {Actor, Block, Entity, Item, Player} from "../../Object";
 import {FloatPos, IntPos} from "../../../types";
 
-export declare class Command {
+export class Command {
     setAlias(alias: string): boolean
 
     setEnum(name: string, values: string[]): boolean
@@ -12,7 +12,7 @@ export declare class Command {
 
     overload(params: string[]): boolean
 
-    setCallback(callback: (cmd: string, origin: CommandOrigin, output: CommandOutput, results) => {}): boolean
+    setCallback(callback: (cmd: string, origin: CommandOrigin, output: CommandOutput, results) => void): boolean
 
     setup(): boolean
 }

@@ -5,7 +5,7 @@ import {Item} from "./Item";
 import {Container} from "./Container";
 import {Device} from "./DeviceInfo";
 import {SimpleForm} from "../API";
-import {NbtCompound} from "../NBTs";
+import {NbtCompound} from "../NBT";
 
 export class Player extends Entity {
     readonly name: string;
@@ -151,4 +151,15 @@ export class Player extends Entity {
      */
     sendForm(fm: SimpleForm, callback: (player: Player, id: Integer) => void): Integer | null
 
+    sendModalForm(title: String, content: String, confirmButton: String, cancelButton: String, callback: (player: Player, result: Boolean | null) => void): Integer | null
+
+    sendSimpleForm(title: String, content: String, buttons: String[], images: String[], callback: (player: Player, id: Integer | null) => void): Integer | null
+
+    sendCustomForm(json: string, callback: (player: Player, data: Array<any>) => void)
+
+    setExtraData(name: String, data: any | null): Boolean
+
+    getExtraData(name: String): any | null
+
+    delExtraData(name: String): Boolean
 }
