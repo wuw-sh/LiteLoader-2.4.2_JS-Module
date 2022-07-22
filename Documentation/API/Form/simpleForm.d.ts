@@ -3,5 +3,6 @@ export class SimpleForm {
 
     static setContent(content: string): SimpleForm
 
-    addButton(text: string, image?: string): SimpleForm
+    static addButton(text: string): SimpleForm
+    static addButton(text: string, image: string): SimpleForm
 }

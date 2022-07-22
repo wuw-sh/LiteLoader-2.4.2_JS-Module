@@ -13,8 +13,13 @@ export class ScoreBoard {
 
     reduceScore(target: Player | string, score: Integer): Integer
 
-    deleteScore(target: string | Player): boolean
+    deleteScore(target: string | Player): Boolean
 
-    setDisplay(slot: string, sortOrder: Integer)
+    setDisplay(slot: string): Boolean
+    /**
+     * @param slot
+     * @param sortOrder = 0
+     */
+    setDisplay(slot: string, sortOrder: Integer): Boolean
 
 }

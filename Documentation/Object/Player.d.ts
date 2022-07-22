@@ -33,8 +33,10 @@ export class Player extends Entity {
 
     disconnect(msg: string): boolean
 
+    tell(msg: string): boolean
     tell(msg: string, type: Integer): boolean
 
+    sendText(msg: string): boolean
     sendText(msg: string, type: Integer): boolean
 
     sendToast(title: string, message: string): boolean
@@ -119,6 +121,12 @@ export class Player extends Entity {
      * @param sortOrder = 1
      */
     setSidebar(title: string, data: {}, sortOrder: number): boolean
+    /**
+     * @param title
+     * @param data
+     */
+    setSidebar(title: string, data: {}): boolean
+
 
     removeSidebar(): boolean
 

@@ -27,6 +27,12 @@ export class mc {
      * @param cmd
      * @param description
      * @param callback
+     */
+    static regPlayerCmd(cmd: string, description: string, callback: (player: Player, args: string[]) => void): boolean
+    /**
+     * @param cmd
+     * @param description
+     * @param callback
      * @param level = 0
      */
     static regPlayerCmd(cmd: string, description: string, callback: (player: Player, args: string[]) => void, level: Integer): boolean
@@ -41,6 +47,7 @@ export class mc {
 
     static getOnlinePlayers(): Player[]
 
+    static broadcast(msg: string): boolean
     static broadcast(msg: string, type: Integer): boolean
 
     static explode(x: IntPos | FloatPos, y: IntPos | FloatPos, z: IntPos | FloatPos, dimid: Integer, source: Entity, power: Float, range: Float, isDestroy: boolean, isFire: boolean): boolean
