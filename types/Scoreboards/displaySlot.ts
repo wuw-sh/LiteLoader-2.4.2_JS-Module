@@ -1,1 +1,0 @@
-export type DisplaySlot = "list" | "sidebar" | "belowName"
