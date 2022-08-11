@@ -1,0 +1,32 @@
+{
+  "name": "liteloader-js",
+  "version": "1.0.0",
+  "description": "Javascript plugin Module For LiteLoader 2.4.2",
+  "main": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wuw-sh/LiteLoader-2.4.0_JS-Module.git"
+  },
+  "keywords": [
+    "LL",
+    "LiteLoader",
+    "LiteLoader-2.4.2",
+    "LiteLoader-2.4.2_JS-Module",
+    "LL JavaScript Module",
+    "LiteLoader JavaScript Module",
+    "LiteLoader Plugin",
+    "LL Plugin",
+    "wuw.sh",
+    "wuw-sh",
+    "wuw6248"
+  ],
+  "author": {
+    "name": "@wuw.sh",
+    "url": "https://github.com/wuw-sh"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wuw-sh/LiteLoader-2.4.0_JS-Module/issues"
+  },
+  "homepage": "https://github.com/wuw-sh/LiteLoader-2.4.0_JS-Module#readme"
+}
